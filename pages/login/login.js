@@ -13,18 +13,31 @@ Page({
       //登录按钮点击事件
       loginTap() {
         console.log("登录按钮")
+        console.log(this.data.number + " " + this.data.password)
         wx.request({
-              url: '',
-              method: "post",
+          url: 'http://localhost:8080/login',
+              // method: "post",
               data: {
-                "number": this.data.number,
+                "registerNum": this.data.number,
                 "password": this.data.password
               },
               success(res) {
                 //跳转到主页面
-                wx.switchTab({
-                  url: '../main/main',
-                })
+                // console.log(res)
+                if(res.data.status == "success"){
+                  wx.switchTab({
+                    url: '/pages/main/main',
+                  })
+                  wx.showToast({
+                    title: res.data.msg,
+                  })
+                }else{
+                  wx.showToast({
+                    title: res.data.msg,
+                    icon:"none",
+                  })
+                }
+                
               }
             })
           },
@@ -41,6 +54,7 @@ Page({
             this.setData({
               password: res.detail.value,
             })
+            console.log("密码是：" + this.data.password)
           },
           register() {
             console.log("注册账号");
