@@ -1,0 +1,32 @@
+<view class="mainbox">
+  <!-- nnu logo and name-->
+  <view class="top-box">
+    <image class="logo" mode="widthFix" src="../images/nnxy.jpg"></image>
+    <view style="font-size: 20px;">
+      <text class="">南宁学院快印中心</text>
+    </view>
+  </view>
+
+  <!-- 输入框和登录按钮 -->
+  <view class="mid-box,input-h">
+    <!-- 学号 -->
+    <view class="top display-row">
+      <input bindinput="inputNum" class="input-border" placeholder-style="input-h" placeholder="请输入您的学号"></input>
+    </view>
+    <!-- 密码 -->
+    <view class="mid display-row">
+      <input bindinput="inputPwd" class="input-border" placeholder-style="input-h" placeholder="请输入您的密码" password="true"></input>
+    </view>
+    <!-- 登录 -->
+    <view class="bot">
+      <button type="primary" bindtap="loginTap">登录</button>
+    </view>
+  </view>
+
+  <!-- 注册和忘记密码 -->
+  <view class="bot-box">
+    <view style="flex:1" bindtap="register">注册账号</view>
+    <view>忘记密码</view>
+  </view>
+
+</view>

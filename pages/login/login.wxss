@@ -1,0 +1,63 @@
+/* pages/login/login.wxss */
+
+.mainbox {
+  display: flex;
+  flex-direction: column;
+}
+
+.top-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 500rpx;
+}
+
+.mid-box {
+  display: flex;
+  flex-direction: column;
+  margin-left: 50rpx;
+  margin-right: 50rpx;
+}
+
+.bot-box {
+  width: 95%;
+  display: flex;
+  flex-direction: row;
+  margin: 20rpx;
+  margin-top: 40rpx;
+}
+
+.top {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 40rpx;
+}
+
+.mid {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 40rpx;
+}
+
+.logo {
+  width: 250rpx;
+}
+
+.input-border {
+  width: 100%;
+}
+
+.input-h {
+  font-size: 35rpx;
+  text-align: center;
+}
+
+.view16 {
+  width: 240px;
+  height: 60px;
+  margin: 10px auto;
+  background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+}

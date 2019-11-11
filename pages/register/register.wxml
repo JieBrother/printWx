@@ -1,0 +1,25 @@
+<view style="margin:50rpx 50rpx">
+  <view class="main-box,.input-h ">
+    <view class="top">
+      <text>学号：</text>
+      <input placeholder="请输入学号" bindinput="registerNum" style="padding-left: 65rpx"></input>
+    </view>
+    <view class="top">
+      <text>姓名：</text>
+      <input placeholder="请输入姓名" bindinput="name" style="padding-left: 70rpx"></input>
+    </view>
+    <view class="top">
+      <text>手机号：</text>
+      <input placeholder="请输入手机号" bindinput="phone" style="padding-left: 50rpx"></input>
+    </view>
+    <view class="top">
+      <text>密码：</text>
+      <input placeholder="请输入密码" bindinput="password" type="password" style="padding-left: 72rpx"></input>
+    </view>
+    <view class="top">
+      <text>确认密码：</text>
+      <input placeholder="请确认密码" bindinput="repassword" type="password"></input>
+    </view>
+  </view>
+  <button type="primary" bindtap="register" style="margin-top:100rpx">注册</button>
+</view>

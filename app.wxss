@@ -1,0 +1,20 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 
+/* 纵向排列
+.display-col{
+  display: flex;
+  flex-direction: column;
+}
+/* 横向排列 */
+/* .display-row{
+  display: flex;
+  flex-direction: row;
+}  */
